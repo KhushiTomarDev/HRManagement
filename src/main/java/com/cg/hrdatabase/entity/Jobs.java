@@ -27,6 +27,7 @@ public class Jobs {
     @JsonIgnore   // prevents infinite recursion
     private List<Employee> employees;
 
+    // Getters & Setters
 	public String getJobId() {
 		return jobId;
 	}
@@ -67,7 +68,6 @@ public class Jobs {
 		this.employees = employees;
 	}
 
-    // Getters & Setters
     
     
 }
