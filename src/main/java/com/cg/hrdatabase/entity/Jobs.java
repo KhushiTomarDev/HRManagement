@@ -1,4 +1,4 @@
-package com.hrapp.entity;
+package com.cg.hrdatabase.entity;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
@@ -27,5 +27,47 @@ public class Jobs {
     @JsonIgnore   // prevents infinite recursion
     private List<Employee> employees;
 
+	public String getJobId() {
+		return jobId;
+	}
+
+	public void setJobId(String jobId) {
+		this.jobId = jobId;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+
+	public BigDecimal getMinSalary() {
+		return minSalary;
+	}
+
+	public void setMinSalary(BigDecimal minSalary) {
+		this.minSalary = minSalary;
+	}
+
+	public BigDecimal getMaxSalary() {
+		return maxSalary;
+	}
+
+	public void setMaxSalary(BigDecimal maxSalary) {
+		this.maxSalary = maxSalary;
+	}
+
+	public List<Employee> getEmployees() {
+		return employees;
+	}
+
+	public void setEmployees(List<Employee> employees) {
+		this.employees = employees;
+	}
+
     // Getters & Setters
+    
+    
 }
